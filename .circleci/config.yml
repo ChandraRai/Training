@@ -54,4 +54,4 @@ jobs:
       
       - checkout
 
-      - run: docker run -p 8080:8080 --name cir_chandra chandrarai/cir_chandra:$CIRCLE_SHA1
+      - run: ssh -p 64625 ubuntu@54.221.135.43 -L 8080:localhost:8080
